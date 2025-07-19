@@ -1,0 +1,307 @@
+    /* Switch Field CSS */
+
+    div ul.switch-field {
+        display: inline-flex;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    div ul.switch-field input {
+        position: absolute !important;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+        overflow: hidden;
+    }
+
+    div.form-row ul.switch-field label,
+    div ul.switch-field label {
+        background-color: #e4e4e4;
+        color: #272727;
+        font-size: 12px !important;
+        line-height: 1;
+        width: auto;
+        text-align: center;
+        padding: 6px 16px;
+        margin-right: -1px;
+        margin-left: 0;
+        transition: all 0.2s ease-in-out;
+        border-right: solid 2px lightgrey;
+    }
+
+    div ul.switch-field input:not([disabled])+label:hover {
+        cursor: pointer;
+        background: #bfbfbf;
+    }
+
+    div ul.switch-field input:checked+label:hover {
+        background: var(--main-color);
+    }
+
+    div ul.switch-field input:checked+label {
+        background: var(--main-color);
+        color: white;
+        box-shadow: none;
+    }
+
+    div ul.switch-field input:focus+label {
+        outline: -webkit-focus-ring-color auto 1px;
+    }
+
+    div ul.switch-field input:disabled+label {
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
+
+    div ul.switch-field input:checked:disabled+label {
+        color: white;
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
+
+    div ul.switch-field label:first-of-type {
+        border-radius: 4px 0 0 4px;
+        border-right: solid 2px lightgrey;
+    }
+
+    div ul.switch-field label:last-of-type {
+        border-radius: 0 4px 4px 0;
+        margin-right: 0;
+        border-right: none;
+    }
+
+    div ul.switch-field label:first-of-type:last-of-type {
+        border-radius: 4px;
+        border: none;
+    }
+
+    /* Tab Field CSS */
+    div ul.tab-field {
+        display: inline-flex;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    div ul.tab-field input:not([disabled])+label:hover {
+        cursor: pointer;
+        background: #eee;
+    }
+
+    /* All */
+    div.form-row ul.tab-field label,
+    div ul.tab-field label {
+        line-height: 1;
+        font-size: 15px;
+        width: auto;
+        text-align: center;
+        padding: 10px 30px;
+        transition: all 0.2s ease-in-out;
+        border-bottom: solid 2px #eee;
+    }
+
+    /* Select */
+    div ul.tab-field input:checked+label {
+        border-bottom: solid 3px #008b10;
+    }
+
+    div ul.tab-field input {
+        position: absolute !important;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+        overflow: hidden;
+    }
+
+    /* another style */
+
+    :root {
+        --main-color: #027B5f;
+    }
+
+    body {
+        font-family: 'Almarai', sans-serif;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        background: #fff7e1;
+    }
+
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px;
+        width: 500px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0px 2px 6px #ccc;
+    }
+
+    div:empty {
+        display: none
+    }
+
+    .wide {
+        width: auto;
+    }
+
+    @media (min-width: 576px) {
+        .container {
+            max-width: 540px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 720px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .container {
+            max-width: 960px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px;
+        }
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        min-width: 100px;
+        transition: transform 0.2s;
+    }
+
+    .btn:hover {
+        transform: scale(1.02);
+    }
+
+    .btn-primary {
+        width: auto;
+        background: #027B5f;
+        border-color: #027B5f;
+        display: block;
+        margin: auto;
+        color: white;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:focus,
+    .btn-primary.active.focus,
+    .btn-primary.active:focus,
+    .btn-primary.active:hover,
+    .btn-primary:active.focus,
+    .btn-primary.active.focus,
+    .btn-primary.active:focus,
+    .btn-primary.active:hover,
+    .btn-primary:active.focus,
+    .btn-primary:active:focus,
+    .btn-primary:active:hover {
+        color: #fff;
+        background: darkslategrey;
+        border-color: darkslategrey;
+    }
+
+    .input-group {
+        width: 360px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1rem;
+    }
+
+    .input-group .form-control:focus {
+        z-index: 0;
+    }
+
+    .input-group-addon {
+        min-width: 36px;
+    }
+
+    .input-group input.form-control {
+        border-radius: 0 4px 4px 0;
+    }
+
+    #fortinet-logo-login {
+        width: 240px;
+        padding: 10px;
+        display: block;
+        margin: auto;
+    }
+
+    #header {
+        border-radius: 8px;
+        margin-bottom: 10px;
+        padding: 5px;
+        position: relative;
+        bottom: 5px;
+    }
+
+    h3 {
+        color: black;
+        text-align: center;
+        font: initial;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .alert {
+        min-width: 300px;
+        max-width: 400px;
+        width: auto;
+    }
+
+    .error {
+        color: red;
+        margin-left: 10px;
+    }
+
+    select {
+        width: inherit;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+
+    .eye-icon {
+        position: absolute;
+        top: 18px;
+        right: 10px;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .captcha__image-wrapper {
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    .captcha__image {
+        width: 160px;
+        cursor: pointer;
+    }
+
+    .captcha__refresh-btn {
+        border: 0;
+        background: transparent;
+    }
+
+    .captcha__image,
+    .captcha__refresh-btn {
+        vertical-align: bottom;
+    }
+
+    #reg_link {
+        position: absolute;
+        top: 20%;
+    }
